@@ -7,7 +7,6 @@
 #include <math.h>
 #include <cstdio>
 #include <cstdlib>
-#include <time.h>
 
 using namespace std;
 
@@ -24,7 +23,10 @@ double Rand(void)
     return (rand()/(double)RAND_MAX);
 }
 
-bool validarRandom(int pos, int r1, int r2, int r3)
+bool validarRandom(int pos,
+                   int r1,
+                   int r2,
+                   int r3)
 {
     if(pos != r1 and pos != r2 and pos != r3 and r1 != r2 and r1 != r3 and r2 != r3)
     {
@@ -217,6 +219,5 @@ void Evolucion_Diferencial_Sphere()
 
 int main()
 {
-    srand (time(NULL));
     return 0;
 }
