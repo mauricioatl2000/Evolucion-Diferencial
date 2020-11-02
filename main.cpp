@@ -1,6 +1,6 @@
 ///_____________________________________///
 ///|                                   |///
-///|       Evolución Diferencial       |///
+///|       EvoluciÃ³n Diferencial       |///
 ///|___________________________________|///
 
 #include <iostream>
@@ -50,7 +50,7 @@ double Rastrigin(double x,double y)
 
 double Sphere(double x,double y)
 {
-    
+    return (x*x) + (y*y);
 }
 
 void Evolucion_Diferencial_Griewank()
